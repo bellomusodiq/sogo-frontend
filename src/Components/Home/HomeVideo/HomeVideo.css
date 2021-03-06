@@ -1,0 +1,56 @@
+.HomeVideo {
+  margin: auto;
+  margin: 5rem 7.5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.HomeVideo > div {
+  width: 45%;
+}
+.HomevideoRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HomevideoRight {
+  /* background-image: url("../../../assets//images/woman-vr.png");
+  background-repeat: no-repeat;
+  background-size: contain; */
+}
+.HomevideoRight > img {
+  width: 20% !important;
+  cursor: pointer;
+}
+.HomevideoLeft > h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.HomevideoLeft > p {
+  font-size: 1.1rem;
+  color: #666666;
+  width: 75%;
+}
+@media screen and (max-width: 480px) {
+  .HomeVideo {
+    flex-direction: column;
+  }
+  .HomeVideo > div {
+    width: 100%;
+  }
+  .HomevideoLeft {
+    margin-bottom: 30px;
+  }
+  .HomevideoLeft > * {
+    width: 100% !important;
+  }
+  .HomevideoLeft > h3 {
+    font-size: 1.3rem !important;
+  }
+  .HomevideoLeft > p {
+    font-size: 1rem !important;
+  }
+  .HomevideoRight > iframe {
+    width: 100% !important;
+    height: 230px !important;
+  }
+}

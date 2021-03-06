@@ -1,0 +1,45 @@
+.Functions {
+  margin-top: 6.25rem;
+  padding: 0 7.5%;
+}
+.FunctionsHeader {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.46em;
+  font-size: 2rem;
+  margin-bottom: 4.5rem;
+}
+.FunctionsContent {
+  display: flex;
+  justify-content: space-between;
+}
+.FunctionsContent > div {
+  width: 47%;
+}
+.FunctionsLeft > img {
+  width: 100%;
+}
+.FunctionsRight {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 3rem;
+}
+.FunctionRightItemTitle {
+  font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  .FunctionsContent {
+    flex-direction: column;
+  }
+  .FunctionsContent > div {
+    width: 80%;
+    margin: auto;
+  }
+  .FunctionsRight {
+    grid-template-columns: auto;
+    margin-top: 30px !important;
+  }
+  .FunctionsHeader {
+      font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,37 @@
+.WhatWeOffer {
+  margin: 5.25rem 7.5% 0;
+}
+.Offers {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.Offer {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+.Offer > img {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  background-position: center;
+}
+.OfferContent {
+  padding: 1rem;
+}
+.OfferTitle {
+  font-weight: bold;
+}
+.WhatWeOffer > h3 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 480px) {
+  .Offers {
+    grid-template-columns: auto;
+  }
+  .WhatWeOffer > h3 {
+    font-size: 2rem;
+  }
+}

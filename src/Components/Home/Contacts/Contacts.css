@@ -1,0 +1,58 @@
+.Contacts {
+  margin: 5rem 7.5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.Contacts > * {
+  width: 47%;
+}
+.ContactsLeft {
+  background: #212224;
+  padding: 4rem;
+  color: white;
+}
+.ContactsLeft > h1 {
+  font-size: 3rem;
+}
+.ContactsRight > * {
+  width: 100%;
+}
+.ContactsRight > p {
+  color: #666666;
+}
+.ContactsRight > input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.5rem;
+}
+.ContactsRight > textarea {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  resize: none;
+  height: 50%;
+}
+.ContactsRight > button {
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  background: #212224;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .Contacts {
+    flex-direction: column;
+  }
+  .Contacts > * {
+    width: 100%;
+  }
+  .ContactsLeft {
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+}

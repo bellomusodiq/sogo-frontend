@@ -1,0 +1,115 @@
+.Footer {
+  margin-top: 100px;
+  padding: 100px 5% 30px 5%;
+  background: #212224;
+  color: #fff;
+}
+.FooterTop {
+  display: flex;
+  justify-content: space-between;
+}
+.FooterLeft {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+.FooterList {
+  display: flex;
+  flex-direction: column;
+}
+.FooterRight {
+  width: 40%;
+}
+.FooterRight > * {
+  margin-bottom: 10px;
+}
+.FooterListItem {
+  margin: 10px 0;
+}
+.Location {
+  display: flex;
+  width: 100%;
+}
+.ContactDetail {
+  display: flex;
+}
+.ContactDetail > span {
+  width: 10%;
+}
+.Location > span {
+  width: 5%;
+}
+.Location > p,
+.ContactDetail > p {
+  flex: 1;
+  margin: 0;
+}
+.ContactDetails {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ContactDetail {
+  width: 50%;
+  margin-top: 10px;
+}
+.ContactDetail a {
+  color: inherit;
+  text-decoration: none;
+}
+.Copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+.SubscribeForm {
+  display: flex;
+  width: 100%;
+}
+.SubscribeForm > input {
+  width: 60%;
+  border-radius: 5px 0 0 5px;
+}
+.SubscribeForm > button {
+  width: 20%;
+  background: #ffc657;
+  border-radius: 0 5px 5px 0;
+}
+.SubscribeForm > * {
+  padding: 10px 15px;
+  border: none;
+}
+.ContactDetail > span > i,
+.Location > span > i {
+  color: #ffc657 !important;
+}
+@media screen and (max-width: 800px) {
+  .Footer {
+    padding: 50px 2% 20px 2%;
+  }
+  .ContactDetails {
+    flex-direction: column;
+  }
+  .SubscribeForm > input {
+    width: 70%;
+  }
+  .SubscribeForm > button {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Footer {
+    padding: 10% 5%;
+  }
+  .FooterTop {
+    flex-direction: column-reverse;
+  }
+  .FooterTop > div {
+    width: 100%;
+  }
+  .ContactDetails {
+    flex-direction: row;
+    font-size: 0.8em;
+  }
+  .Copyright {
+    text-align: right;
+  }
+}

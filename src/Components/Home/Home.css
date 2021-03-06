@@ -1,0 +1,13 @@
+.SliderContent {
+  margin: auto;
+  margin-top: 4.5rem;
+  width: 60%;
+}
+.SponsorImage {
+  width: 80%;
+}
+@media screen and (max-width: 480px) {
+  .SliderContent {
+    width: 90%;
+  }
+}

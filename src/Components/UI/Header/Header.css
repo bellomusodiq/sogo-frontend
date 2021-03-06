@@ -1,0 +1,145 @@
+.Header {
+  height: 43rem;
+  background: #212224;
+  display: flex;
+  flex-direction: column;
+}
+.HeaderContent {
+  flex: 1;
+  padding: 3.125rem 7rem 0;
+}
+.HeaderArc {
+  height: 2.5%;
+  width: 100%;
+  background: white;
+  border-radius: 120% 120% 0 0;
+}
+.Logo {
+  width: 3.75rem;
+}
+.Logo > img {
+  width: 100%;
+}
+.HeaderLogoNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  width: 100vw;
+  left: 0%;
+  top: 0;
+  z-index: 2;
+  padding: 0.5rem 5%;
+}
+nav.Nav {
+  flex: 0.8;
+  justify-self: self-end;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+.NavItems {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+nav.Nav a {
+  color: white !important;
+  text-decoration: none;
+}
+.NavItems > a {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.NavItems > a > .Active {
+  width: 150%;
+  height: 3px;
+  background: #ffc657;
+  margin-top: 10px;
+}
+.HeaderSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  font-family: 'Gilroy-Bold';
+}
+.HeaderContent {
+  display: flex;
+  flex-direction: column;
+}
+.HeaderSection > div {
+  width: 50%;
+  height: 100% !important;
+}
+.HeaderSectionRight {
+  height: 100% !important;
+  /* width: 100%; */
+  background-color: transparent !important;
+  background-image: url("../../../assets/images/banner-image.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  z-index: 1;
+}
+.HeaderSectionLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.StoreButtons {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.StoreButtons > img {
+  width: 48%;
+}
+.HeaderSectionLeft > h1 {
+  font-size: 3.5rem;
+  color: #ffc657;
+  margin: 0;
+}
+.HeaderSectionLeft > p {
+  color: white;
+  font-size: 1.2rem;
+  width: 80%;
+  margin-bottom: 3.5rem;
+}
+.StoreButtons > img {
+  height: 55px;
+}
+@media screen and (max-width: 480px) {
+  .Logo {
+    width: 2.5rem;
+  }
+  .HeaderContent {
+    padding: 20px 5% 0;
+  }
+  nav.Nav {
+    display: none;
+  }
+  .HeaderSection {
+    flex-direction: column;
+    padding: 0 5%;
+    margin-top: 50px;
+  }
+  .HeaderSection > div {
+    width: 100%;
+  }
+  .HeaderSectionLeft > h1 {
+    font-size: 2rem;
+  }
+  .HeaderSectionLeft > p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .StoreButtons {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
